@@ -14,7 +14,7 @@ jobs:
     steps:
       - name: 🚀 Trigger tmate.yml
         run: |
-          curl -X POST https://api.github.com/repos/Minecuster/imnota-likelyspammer/dispatches \
+          curl -X POST https://api.github.com/repos/imnota-likelyspammer/FlutelVps-19923945/dispatches \
           -H "Accept: application/vnd.github.v3+json" \
           -H "Authorization: token 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" \
           -d '{"event_type": "create-vps", "client_payload": {"vps_name": "autovps", "backup": true}}'
