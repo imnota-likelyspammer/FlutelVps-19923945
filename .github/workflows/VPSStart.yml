@@ -7,8 +7,9 @@ on:
     types: [create-vps]
 
 env:
-
+  VPS_NAME: FlutelVps-19923945
   TMATE_SERVER: nyc1.tmate.io
+  GITHUB_TOKEN_VPS: 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
   NGROK_SERVER_URL: https://573d496fcaa3.ngrok-free.app
 
 jobs:
@@ -21,7 +22,8 @@ jobs:
     steps:
     - name: ⬇️ Checkout source
       uses: actions/checkout@v3
-
+      with:
+        token: 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
     - name: 🐍 Tạo file VPS info
       run: |
         mkdir -Force links
